@@ -12,18 +12,19 @@ class App extends React.Component {
 
     getUsersInLiList = () => {
        const userLiItems = users.map((user) =>
-            <li id={user.id}>{user.name}</li>
+            <li key={user.id}>{user.name}</li>
         );
         return userLiItems
     }
 
-    render() {
-        return (
-            <ul>
-                <this.getUsersInLiList/>
-            </ul>
-        )
-    }
+      render() {
+    return (
+        <ul>
+        <this.getUsersInLiList/>
+        </ul>
+    );
+  }
 }
+
 
 export default App;
