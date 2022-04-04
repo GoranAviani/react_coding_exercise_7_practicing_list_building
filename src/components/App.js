@@ -11,7 +11,7 @@ const users = [
 class App extends React.Component {
     allUsers = []
 
-    userList = () => {
+    getUsersInLiList = () => {
         users.map((user)=>{
             console.log(user.name)
           this.allUsers.push(<li id={user.id}>{user.name}</li>)
@@ -24,7 +24,7 @@ class App extends React.Component {
     render() {
         return (
             <ul>
-                <this.userList/>
+                <this.getUsersInLiList/>
             </ul>
         )
     }
