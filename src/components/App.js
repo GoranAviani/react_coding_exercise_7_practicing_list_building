@@ -18,12 +18,10 @@ class App extends React.Component {
     }
 
     render() {
-         const userLiItems = users.map(({id, name}) =>
-            <li key={id}>{name}</li>
-        );
+
         return (
             <ul>
-                {userLiItems}
+                {/* <this.getUsersInLiList/>*/}
             </ul>
         );
     }
