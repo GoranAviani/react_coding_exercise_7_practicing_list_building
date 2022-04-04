@@ -9,10 +9,22 @@ const users = [
 
 
 class App extends React.Component {
+    allUsers = []
+
+    userList = () => {
+        users.map((user)=>{
+            console.log(user.name)
+          this.allUsers.push(<li id={user.id}>{user.name}</li>)
+
+        })
+
+        return this.allUsers
+    }
 
     render() {
         return (
             <ul>
+                <this.userList/>
             </ul>
         )
     }
