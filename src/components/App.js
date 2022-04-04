@@ -11,19 +11,19 @@ const users = [
 class App extends React.Component {
 
     getUsersInLiList = () => {
-       const userLiItems = users.map((user) =>
+        const userLiItems = users.map((user) =>
             <li key={user.id}>{user.name}</li>
         );
         return userLiItems
     }
 
-      render() {
-    return (
-        <ul>
-        <this.getUsersInLiList/>
-        </ul>
-    );
-  }
+    render() {
+        return (
+            <ul>
+                <this.getUsersInLiList/>
+            </ul>
+        );
+    }
 }
 
 
