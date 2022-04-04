@@ -9,15 +9,12 @@ const users = [
 
 
 class App extends React.Component {
-    allUsers = []
 
     getUsersInLiList = () => {
-        users.map((user) => {
-            console.log(user.name)
-            this.allUsers.push(<li id={user.id}>{user.name}</li>)
-
-        })
-        return this.allUsers
+       const userLiItems = users.map((user) =>
+            <li id={user.id}>{user.name}</li>
+        );
+        return userLiItems
     }
 
     render() {
