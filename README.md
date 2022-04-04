@@ -1,3 +1,4 @@
+Coding excercise from Modern React With Reduct Course by Stephen Grider. Excercise Section 9: Building Lists of Records , Coding Exercise 7: Practicing List Building
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
